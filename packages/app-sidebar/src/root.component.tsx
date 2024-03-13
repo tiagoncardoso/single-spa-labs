@@ -1,4 +1,5 @@
 import { MantineProvider, createTheme, MantineColorsTuple } from '@mantine/core';
+import { NavbarSimpleColored } from './components/Sidebar/Sidebarmenu';
 
 const theme = createTheme({
   colors: {
@@ -20,7 +21,7 @@ const theme = createTheme({
 export default function Root(props) {
   return (
     <MantineProvider theme={theme}>
-      <section>{props.name} is mounted! Aqui Sidebar</section>
+      <NavbarSimpleColored />
     </MantineProvider>
   );
 }

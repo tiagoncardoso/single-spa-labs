@@ -46,9 +46,9 @@ export function NavbarSimpleColored() {
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
         <Group className={classes.header} justify="space-between">
-          <h3>Aqui é a Logo</h3>
+          <h3>Logo :-)</h3>
           <Code fw={700} className={classes.version}>
-            v3.1.2
+            v1.0
           </Code>
         </Group>
         {links}

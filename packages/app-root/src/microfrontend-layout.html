@@ -1,27 +1,9 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
-
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <main>
-    <nav>
+  <main style="height: 100%;">
+    <nav style="position: fixed; top: 0; width: 100dvi; line-height: 8vh">
       <application name="@sula/navbar"></application>
     </nav>
-    <div>
+    <div style="position: fixed; top: 8vh;">
       <application name="@sula/sidebar"></application>
     </div>
     <route default>

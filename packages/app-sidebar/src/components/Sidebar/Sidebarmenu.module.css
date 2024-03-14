@@ -2,7 +2,7 @@
   bottom: 0;
   top: 8vh;
   height: 92vh;
-  width: rem(300px);
+  max-width: 280px;
   padding: var(--mantine-spacing-md);
   display: flex;
   flex-direction: column;

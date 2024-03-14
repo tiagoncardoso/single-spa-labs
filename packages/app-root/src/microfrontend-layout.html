@@ -1,13 +1,15 @@
 <single-spa-router>
   <main style="height: 100%;">
-    <nav style="position: fixed; top: 0; width: 100dvi; line-height: 8vh">
+    <nav style="position: fixed; top: 0; width: 100dvi">
       <application name="@sula/navbar"></application>
     </nav>
     <div style="position: fixed; top: 8vh;">
       <application name="@sula/sidebar"></application>
     </div>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
+    <div style="margin-top: 10vh;">
+      <route default>
+        <application name="@single-spa/welcome"></application>
+      </route>
+    </div>
   </main>
 </single-spa-router>

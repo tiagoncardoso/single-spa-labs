@@ -46,7 +46,7 @@ export function NavbarSimpleColored() {
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
         <Group className={classes.header} justify="space-between">
-          <h3>Logo :-)</h3>
+          <h3 style={{color: 'rgb(231 201 60)'}}>Logo :-)</h3>
           <Code fw={700} className={classes.version}>
             v1.0
           </Code>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Content": {
+    "mf-sula-home": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/content",
+            "outputPath": "dist/mf-sula-home",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -36,7 +36,7 @@
             "main": "src/main.single-spa.ts",
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
-              "libraryName": "Content",
+              "libraryName": "mf-sula-home",
               "libraryTarget": "umd"
             },
             "deployUrl": "http://localhost:4200/"
@@ -70,10 +70,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Content:build:production"
+              "buildTarget": "mf-sula-home:build:production"
             },
             "development": {
-              "buildTarget": "Content:build:development"
+              "buildTarget": "mf-sula-home:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Content:build"
+            "buildTarget": "mf-sula-home:build"
           }
         },
         "test": {
